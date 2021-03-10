@@ -2,14 +2,13 @@
 
 This Project Name is Based On React.Js.
 
-### `Conditional formatting `
+### `Project Feature`
 
-If League Gender is Male , Female or Mixed ,you Will see different Image base on Gender.\
-Interestingly , IPL has Mixed Gender.
+1.\2.\3.
 
 ### `Live Project`
 
-Visit : [Visit_Site](https://fifc.netlify.app/)
+Visit : [Visit_Site](https://leagueofsports.netlify.app/)
 
 ## List of uses npm package.
 
@@ -34,4 +33,4 @@ You can browse from Laptop,Tablet and Mobile.
 
 ### `Live Project`
 
-Visit : [Visit_Site](https://fifc.netlify.app/)
+Visit : [Visit_Site](https://leagueofsports.netlify.app/)
