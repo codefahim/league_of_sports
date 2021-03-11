@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink,
+} from "react-router-dom";
 import Home from "./../Home/Home";
 import About from "./../About/About";
 import NoMatch from "../NoMatch/NoMatch";
@@ -18,23 +24,7 @@ const Header = () => {
               federation of international football clubs
             </code>
           </div>
-          <Navbar expand="sm">
-            <Navbar.Brand>FIFC</Navbar.Brand>
 
-            <Nav className="mr-auto">
-              <li>
-                <Link to="/Home">Home</Link>
-              </li>
-              /
-              <li>
-                <Link to="/About">About</Link>
-              </li>
-              /
-              <li>
-                <Link to="/Contact Us">Contact Us</Link>
-              </li>
-            </Nav>
-          </Navbar>
           <Home></Home>
         </Route>
         <Route path="/Home">
@@ -49,28 +39,139 @@ const Header = () => {
 
             <Nav className="mr-auto">
               <li>
-                <Link to="/Home">Home</Link>
+                <NavLink
+                  activeStyle={{ color: "#A3CB38", fontWeight: "bold" }}
+                  to="/Home"
+                >
+                  Home
+                </NavLink>
               </li>
               /
               <li>
-                <Link to="/About">About</Link>
+                <NavLink
+                  activeStyle={{ color: "#A3CB38", fontWeight: "bold" }}
+                  to="/About"
+                >
+                  About
+                </NavLink>
               </li>
               /
               <li>
-                <Link to="/Contact Us">Contact Us</Link>
+                <NavLink
+                  activeStyle={{ color: "#A3CB38", fontWeight: "bold" }}
+                  to="/Contact Us"
+                >
+                  Contact Us
+                </NavLink>
               </li>
             </Nav>
           </Navbar>
           <Home></Home>
         </Route>
         <Route path="/About">
+          <Navbar expand="sm">
+            <Navbar.Brand>FIFC</Navbar.Brand>
+
+            <Nav className="mr-auto">
+              <li>
+                <NavLink
+                  activeStyle={{ color: "#A3CB38", fontWeight: "bold" }}
+                  to="/Home"
+                >
+                  Home
+                </NavLink>
+              </li>
+              /
+              <li>
+                <NavLink
+                  activeStyle={{ color: "#A3CB38", fontWeight: "bold" }}
+                  to="/About"
+                >
+                  About
+                </NavLink>
+              </li>
+              /
+              <li>
+                <NavLink
+                  activeStyle={{ color: "#A3CB38", fontWeight: "bold" }}
+                  to="/Contact Us"
+                >
+                  Contact Us
+                </NavLink>
+              </li>
+            </Nav>
+          </Navbar>
           <About></About>
         </Route>
 
         <Route path="/League/:idLeague">
+          <Navbar expand="sm">
+            <Navbar.Brand>FIFC</Navbar.Brand>
+
+            <Nav className="mr-auto">
+              <li>
+                <NavLink
+                  activeStyle={{ color: "#A3CB38", fontWeight: "bold" }}
+                  to="/Home"
+                >
+                  Home
+                </NavLink>
+              </li>
+              /
+              <li>
+                <NavLink
+                  activeStyle={{ color: "#A3CB38", fontWeight: "bold" }}
+                  to="/About"
+                >
+                  About
+                </NavLink>
+              </li>
+              /
+              <li>
+                <NavLink
+                  activeStyle={{ color: "#A3CB38", fontWeight: "bold" }}
+                  to="/Contact Us"
+                >
+                  Contact Us
+                </NavLink>
+              </li>
+            </Nav>
+          </Navbar>
           <LeagueDetails></LeagueDetails>
         </Route>
         <Route path="*">
+          <Navbar expand="sm">
+            <Navbar.Brand>FIFC</Navbar.Brand>
+
+            <Nav className="mr-auto">
+              <li>
+                <NavLink
+                  activeStyle={{ color: "#A3CB38", fontWeight: "bold" }}
+                  to="/Home"
+                >
+                  Home
+                </NavLink>
+              </li>
+              /
+              <li>
+                <NavLink
+                  activeStyle={{ color: "#A3CB38", fontWeight: "bold" }}
+                  to="/About"
+                >
+                  About
+                </NavLink>
+              </li>
+              /
+              <li>
+                <NavLink
+                  activeStyle={{ color: "#A3CB38", fontWeight: "bold" }}
+                  to="/Contact Us"
+                >
+                  Contact Us
+                </NavLink>
+              </li>
+            </Nav>
+          </Navbar>
           <NoMatch></NoMatch>
         </Route>
       </Switch>
